@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			ML App
+		</div>
+		<h2>Teacher Review Sentimental Analysis</h2>
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<div class="results">
+
+
+		
+	{% if prediction ==1%}
+	<h2 style="color:red;">awful/ 1 Rating</h2>
+	{% elif prediction == 2%}
+	<h2 style="color:blue;">poor/ 2 Rating</h2>
+	{% elif prediction == 3%}
+	<h2 style="color:blue;">average/ 3 Rating</h2>
+	{% elif prediction == 4%}
+	<h2 style="color:blue;">good/ 4 Rating</h2>
+	{% elif prediction == 5%}
+	<h2 style="color:blue;">awesome/5 Rating</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>

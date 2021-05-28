@@ -1,0 +1,251 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font:15px/1.5 Arial, Helvetica,sans-serif;
+	height: 100vh;
+	padding: 0px;
+	background-color:#f4f3f3;
+}
+
+/* wrappers*/
+.wrapper{
+	padding: 0 6vw;
+}
+.focus{
+	text-align: center;
+	padding: 40px 24vw 40px 24vw;
+	margin: 0 auto;
+}
+.focus-feature{
+	text-align: center;
+	padding: 40px 24vw 40px 24vw;
+	margin: 0 auto;
+	background: linear-gradient(320deg, rgba(205,255,207,1) 0%, rgba(4,203,255,1) 100%);
+}
+
+.container{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header{
+	background:#03A9F4;
+	border-bottom:#448AFF 3px solid;
+	height:120px;
+	width:100%;
+	padding-top:30px;
+}
+
+.main-header{
+			text-align:center;
+			background-color: blue;
+			height:100px;
+			width:100%;
+			margin:0px;
+		}
+#brandname{
+	float:left;
+	font-size:30px;
+	color: #fff;
+	margin: 10px;
+}
+
+header h2{
+	text-align:center;
+	color:#fff;
+
+}
+
+/* About-Us */
+.about_us{
+	text-align: center;
+}
+.heading{
+	display: inline-block;
+	position: relative;
+}
+#line::before{
+	position: absolute;
+	content:"";
+	width: 45%;
+	height: 5px;
+	bottom: -10px;
+	background-color:rgb(252, 207, 149);
+}
+#line::after{
+	position: absolute;
+	content:"";
+	left:50%;
+	width: 5%;
+	height: 5px;
+	bottom: -10px;
+	background-color:rgb(103, 155, 252);
+}
+.heading h1{
+	text-align: center;
+	font-size: 32px;
+	font-family:roboto;
+	font-weight: 900;
+}
+.about_us p{
+	text-align: center;
+	font-family: poppins;
+	font-weight: 500;
+	margin: 60px 0;
+	color: rgb(107, 107, 107);
+}
+.gridbox{
+	grid-row-gap: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-bottom: 3vw;
+	grid-column-gap: 10px;
+}
+.gridbox #box h1{
+	font-family: sans-serif;
+	text-align: center;
+	color: rgb(59, 59, 59);
+}
+.gridbox #box1 p{
+	text-align: center;
+	color: rgb(126, 126, 126);
+	font-weight: 400;
+}
+
+
+input {
+	margin: 10px auto;
+	display: block;
+	width: 50%;
+	padding: 16px 42px;
+	background-color: #e9e9e9;
+	border: none;
+	border-radius: 25px ;
+}
+
+
+.results{
+	border-radius: 15px 50px;
+    background: #345fe4;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+}
+
+form button{
+	padding: 15px 40px;
+	border-radius: 25px;
+	border: none;
+	background-color: #ffc3e6;
+	font-family: 'roboto';
+	font-weight: 600;
+	font-size: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+	margin: 20px 0;
+	top: 20px;
+}
+
+button:hover{
+	background-color: #62f196;
+	transition: 0.5s;
+}
+
+input:focus, textarea:focus, select:focus, button:focus{
+	outline: none;
+}
+
+textarea{
+	min-width: 334px;
+	min-height: 150px;
+	background-color: #e9e9e9;
+	border: none;
+	font-family: poppins;
+	font-size: 14px;
+	border-radius: 25px 25px 25px 25px;
+	box-sizing: border-box;
+	padding: 16px 42px 16px 42px;
+	resize: none;
+	display: block;
+	margin: 0 auto;
+}
+
+/* developers */
+
+.photo{
+	padding-top: 80px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 100px;
+	max-width: 800px;
+	height: auto;
+	margin: 0 auto;
+}
+.photo #photo-div img{
+	border: solid rgb(75, 75, 75) 5px;
+	border-radius: 200px;
+	max-width: 100%;
+	width: 250px;
+	height: 250px;
+}
+.developers{
+	background: rgb(206,193,237);
+	background: linear-gradient(344deg, rgb(244, 220, 255) 0%, rgb(253, 222, 231) 100%);
+}
+.photo #photo-div{
+	color: rgb(44, 44, 44);
+}
+.photo #photo-div h1{
+	padding-top: 30px;
+}
+
+
+/* Responsiveness */
+@media only screen and (max-width: 1200px) {
+	.gridbox #box {
+		height: 110px;
+	}
+	.focus, .focus-feature{
+		padding: 40px 40px;
+		margin: 0 auto;
+	}
+	.features{
+		grid-row-gap:50px;
+	}
+}
+@media only screen and (max-width: 1500px) {
+	.focus, .focus-feature{
+		padding: 40px 90px;
+		margin: 0 auto;
+		grid-auto-rows: 1fr;
+	}
+	.container-1{
+		height: 450px;
+	}
+	.container-1 .area1 h1{
+		font-size: 48px;
+		line-height: 45px;
+	}
+}
+@media only screen and (max-width: 950px) {
+	.focus, .focus-feature{
+		padding: 40px 25px;
+		margin: 0 auto;
+	}
+	.photo #photo-div img{
+		border-radius: 200px;
+		max-width: 100%;
+		width: 150px;
+		height: 150px;
+	}
+}
+
+/* scroll bar*/
+.container::-webkit-scrollbar {
+	display: none;  /* Safari and Chrome */
+}
