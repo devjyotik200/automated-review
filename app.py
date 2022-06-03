@@ -10,7 +10,7 @@ ps = PorterStemmer()
 model = joblib.load(open('model2.pkl', 'rb'))
 cv = joblib.load(open('cv1.pkl', 'rb'))
 
-#ddevjyoti karan lets see if this worls
+#ddevjyoti karan
 
 
 
